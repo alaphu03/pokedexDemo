@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+*{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color:black;
+}
+
+.NavBar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    position: fixed ;
+    width: 100%;
+    top: 0%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    background-color: white ;
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 10px 0;
+}
+
+nav input {
+    left: 39%;
+    top: 14px;
+    position: absolute;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 300px;
+}
+
+nav button {  
+    right: 36%;
+    top: 14px;
+    position: absolute;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: aqua;
+    color: black;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* nav button :hover {
+    background: #ccc;
+} */
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 26px;
+    position: relative;
+}
+
+nav a {
+    background-color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+  color: steelblue;
+}
+
+/* nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+} */
+
+nav a:hover::before {
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {  
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: inherit;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #ddd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.content {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background:white;
+    margin-top: 15px;
+  }
+/* #PokemonCard{
+  height: 180px;
+  width: 137px;
+  margin: 15px;
+  background-color: black(218, 218, 218);
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+} */
+/* #img_container{
+  display: block;
+  align-items: center;
+} */
+#img{
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+  z-index:-1;
+}
+
+
+#name{
+  text-transform: capitalize;
+}
+#PokemonID{
+  height: 17px;
+  width: 29px;
+  color: black;
+}
+
+.row-flex{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+#Card{
+  width: 300px;
+  border-radius: 1px;
+  padding: 15px;
+  margin-left: 250px;
+  float: left;
+  height: 100%;
+}
+#pokemonStat{
+  margin-left: 125px;
+}
+#Stat{
+  height: 266px;
+  width: 50%;
+  float: right;
+  margin-right: 50px;
+  border-radius: 2px;
+}
+#pokemonIMG{
+  height: 250px;
+  width: 250px;
+}
+#DesTiltle{
+  text-align: center;
+}
+.Description{
+  width: 50%;
+  height: 266px;
+  margin-right: 50px;
+  float: right;
+  border-radius: 2px;
+}
+#ID{
+  font-size: 20px;
+  color: grey;
+  display: inline;
+}
+#IDContainer{
+  text-align: center;
+}
+#name{
+  display: inline;
+  font-size: 20px;
+  color: black;
+}
+#H{
+  color: cadetblue;
+}
+
+#W{
+  color: cadetblue;
+}
+#Height{
+  display: inline;
+}
+#Weight{
+  display: inline;
+}
+#T{
+  color:cadetblue;
+  display: inline;
+  text-transform: capitalize;
+}
+#A{
+  color:cadetblue;
+  display: inline;
+  text-transform: capitalize;
+}
+#type{
+  padding: 8px 0px;
+  background-color:  rgb(51, 228, 51);
+  color: white;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline;
+}
+
+#myProgress {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+#myProgress2 {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+#myProgress3 {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+#myProgress4 {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+#myProgress5 {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+#myProgress6 {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+
+#myBar1 {
+  border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: rgb(45, 157, 201);
+
+}
+#myBar2 {
+  border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: rgb(45, 157, 201);
+
+}
+#myBar3 {
+  border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: rgb(45, 157, 201);
+
+}
+#myBar4 {
+  border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: rgb(45, 157, 201);
+
+}
+#myBar5 {
+  border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: rgb(45, 157, 201);
+
+}
+#myBar6 {
+  border-radius: 10px;
+  width: 1%;
+  height: 30px;
+  background-color: rgb(45, 157, 201);
+}
